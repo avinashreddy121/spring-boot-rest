@@ -1,0 +1,9 @@
+applications:
+- name: spring-boot-avrest
+  memory: 1024M
+  path: target/spring-boot-rest-0.0.1-SNAPSHOT.jar
+  instances: 2
+  buildpack: java_buildpack
+  routes:
+    - route: spring-boot-avrest.cfapps.io
+    - route: spring-boot-restav.cfapps.io
